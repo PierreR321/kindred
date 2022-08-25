@@ -1,0 +1,69 @@
+.header {
+    position:fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 84px;
+    background: #fff3ed;
+    z-index: 10000;
+}
+.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.right {
+    flex: 9;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 54px;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border: 8px solid rgb(255, 249, 247);
+    cursor: pointer;
+}
+.headtext {
+    font-weight: 700;
+    --tw-text-opacity: 1;
+    color: rgb(149 103 103/var(--tw-text-opacity));
+    padding: 2px 16px 0;
+    font-size: 16px;
+    font-family: 'Rubik Arial san-serif';
+}
+.discord {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 20px;
+    padding: 0 16px;
+    --tw-text-opacity: 1;
+    color: rgb(149 103 103/var(--tw-text-opacity));
+    cursor: pointer;
+}
+.twitter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    padding: 0 16px;
+    --tw-text-opacity: 1;
+    color: rgb(149 103 103/var(--tw-text-opacity));   
+    cursor: pointer;
+}
+
+.kind {
+    width: 24px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+}

@@ -1,0 +1,7 @@
+.tastepage {
+    width: 100%;
+    background: #faefea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
