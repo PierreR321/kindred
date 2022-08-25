@@ -19,6 +19,7 @@ const App = () => {
             <FAQ />
             <Team />
             <Footer />
+            <DropDown />
         </div>
     )
 }
