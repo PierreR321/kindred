@@ -17,12 +17,15 @@ const DropDown = (props) => {
 }
 
 const Container = styled.div`
-    position: fixed;
     width: 100%;
-    display: ${(props) => props.isShown ? "inherit" : "none"}
+    position: fixed;
+    display: ${(props) => props.isShown ? "inherit" : "none"};
     padding: 100px 18px 0;
     background: rgb(255, 243, 237);
     opacity: 0.7;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
 `
 
 const DDTerm = styled.div`
@@ -30,6 +33,8 @@ const DDTerm = styled.div`
     font-size: 22.5px;
     padding: 10.5px 0;
     border-bottom: 1px solid black;
+    margin-left: 12px;
+    margin-right: 12px;
 `
 
 export default DropDown;
