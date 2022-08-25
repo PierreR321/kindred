@@ -6,11 +6,13 @@ import VisionMap from '../pages/VisionMap';
 import FAQ from "../pages/FAQ";
 import Team from '../pages/Team'
 import Footer from '../pages/Footer';
+import DropDown from '../components/DropDown'
 
 const App = () => {
     return (
         <div className="App">
             <Header />
+            <DropDown />
             <Video />
             <Tastepage />
             <VisionMap />
