@@ -11,7 +11,7 @@ const Header = () => {
   return (
     <div className='header'>
       <div className='left'>
-        <img className='logo' src='/database/logo.jpg' alt='' />
+        <img className='logo' src='/img/logo.webp' alt='' />
       </div>
 
       <div className='right'>
@@ -21,7 +21,7 @@ const Header = () => {
         <div className='headtext'>TEAM</div>
         <i className="discord fa-brands fa-discord"></i>
         <i class="twitter fa-brands fa-twitter"></i>
-        <img className='kind' src='/database/kind.png' alt='' />
+        <img className='kind' src='/img/1k-logo.webp' alt='' />
         <Button text='CONNECT WALLET' />
       </div>
     </div>
