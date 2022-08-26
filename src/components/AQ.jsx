@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { useState } from "react";
 
+import { desktop } from "../utils";
+
 const AQ = (props) => {
     const [isCollapsed, setIsCollapsed] = useState(true);
     return (
@@ -16,6 +18,9 @@ const AQ = (props) => {
 
 const Container = styled.div`
     width: 800px;
+    ${desktop} {
+        width: calc(100% - 80px);
+    }
     text-align: center;
     background: #fff3ed;
     display: flex;
