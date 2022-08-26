@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 
+import {desktop, mobile} from "../utils"
+
 const Banner = () => {
     return (
         <Container>
-            <video style={{width: "100%", height: "640px", objectFit: "cover"}} autoPlay loop muted playsinline preload="none">
+            <BannerVideo autoPlay loop muted preload="none">
                 <source src="/video/banner.mp4" type="video/mp4"></source>
-            </video>
+            </BannerVideo>
             <SpiritBox>
                 <SpiritBoxText>SPIRIT BOX</SpiritBoxText>
             </SpiritBox>
@@ -17,6 +19,16 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     width: 100%;
+`
+
+const BannerVideo = styled.video`
+    width: 100%;
+    height: 640px;
+    object-fit: cover;
+    padding-top: 84px;
+    ${desktop} {
+        padding-top: 60px;
+    }
 `
 
 const SpiritBox = styled.div`
@@ -50,4 +62,5 @@ const SpiritBoxText = styled.div`
         transition: 0.5s;
     }
 `
+
 export default Banner;

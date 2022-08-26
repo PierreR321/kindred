@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const DropDown = (props) => {
+const DropDown = () => {
     return (
-        <Container isShown={props.isShown}>
+        <Container>
             <DDTerm>MINT</DDTerm>
             <DDTerm>TASTEMAKERS</DDTerm>
             <DDTerm>VISION MAP</DDTerm>
@@ -18,9 +18,10 @@ const DropDown = (props) => {
 
 const Container = styled.div`
     width: 100%;
+    height: 100%;
     position: fixed;
-    display: ${(props) => props.isShown ? "inherit" : "none"};
-    padding: 100px 18px 0;
+    display: none;
+    padding: 60px 18px 0;
     background: rgb(255, 243, 237);
     opacity: 0.7;
     text-align: left;
@@ -33,8 +34,6 @@ const DDTerm = styled.div`
     font-size: 22.5px;
     padding: 10.5px 0;
     border-bottom: 1px solid black;
-    margin-left: 12px;
-    margin-right: 12px;
 `
 
 export default DropDown;
