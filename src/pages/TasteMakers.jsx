@@ -57,7 +57,7 @@ const TasteMakers = () => {
                         />
                     </Content>
                 )
-            case 2:
+            default:
                 return (
                     <Content
                         onMouseOver={() => setIndex(2)}
