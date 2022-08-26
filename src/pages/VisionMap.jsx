@@ -3,8 +3,10 @@ import styled from "styled-components";
 const VisionMap = () => {
     return (
         <Container>
-            <Maps>
-                <MapBar>
+
+            <MapBar>
+                <Bar>
+                    <MapBarTitle>KINDRED SPIRITS VISION MAP</MapBarTitle>
                     <MapBarImg src="img/drop.webp" />
                     <MapBarImg src="img/drop.webp" />
                     <MapBarImg src="img/drop.webp" />
@@ -22,7 +24,28 @@ const VisionMap = () => {
                     <MapBarImg src="img/drop.webp" />
                     <MapBarImg src="img/drop.webp" />
                     <MapBarImg src="img/drop.webp" />
-                </MapBar>
+                    <MapBarTitle>KINDRED SPIRITS VISION MAP</MapBarTitle>
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarTitle>KINDRED SPIRITS VISION MAP</MapBarTitle>
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                </Bar>
+            </MapBar>
+            <Maps>
+
                 <MapPosts>
                     <MapPost>
                         <MapTitle style={{ background: "#ec5b8f" }}>
@@ -47,7 +70,10 @@ const VisionMap = () => {
                         <MapImg src="img/unknown.webp"></MapImg>
                     </MapPost>
                 </MapPosts>
-                <MapBar>
+            </Maps>
+            <MapBar>
+                <Bar1>
+                    <MapBarTitle>KINDRED SPIRITS VISION MAP</MapBarTitle>
                     <MapBarImg src="img/drop.webp" />
                     <MapBarImg src="img/drop.webp" />
                     <MapBarImg src="img/drop.webp" />
@@ -65,8 +91,28 @@ const VisionMap = () => {
                     <MapBarImg src="img/drop.webp" />
                     <MapBarImg src="img/drop.webp" />
                     <MapBarImg src="img/drop.webp" />
-                </MapBar>
-            </Maps>
+                    <MapBarTitle>KINDRED SPIRITS VISION MAP</MapBarTitle>
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarTitle>KINDRED SPIRITS VISION MAP</MapBarTitle>
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                    <MapBarImg src="img/drop.webp" />
+                </Bar1>
+
+            </MapBar>
+
             <Posts>
                 <PostsTitle>GENSIS PASS UTILITY</PostsTitle>
                 <Post>
@@ -105,20 +151,58 @@ const Maps = styled.div`
 `
 
 const MapBar = styled.div`
-    width: 100%;
+    background: #f7dec5b3;
     height: 36px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    white-space: nowrap;
+    z-index: 99;
+    overflow: hidden;
+`
+const Bar1 = styled.div`
+white-space: nowrap;
+display: flex;
+flex-direction: row;
+align-items: center;
+@keyframes animate1 {
+    0%{
+        transform: translate(-25%,0%);
+    }
+    100%{
+        transform: translate(0%,0%);
+    }
+}
+animation: animate1 5s linear 0s infinite running;
+animation-play-state: running;
+animation-delay: 0s;
 `
 
+const Bar = styled.div`
+    white-space: nowrap;
+    display: inline-block;
+    flex-direction: row;
+    align-items: center;
+    @keyframes animate {
+        0%{
+            transform: translate(-0%,0%);
+        }
+        100%{
+            transform: translate(-25%,0%);
+        }
+    }
+    animation: animate 5s linear  infinite;
+    animation-play-state: running;
+    animation-delay: 0s;  
+`
 const MapBarTitle = styled.span`
     font-size: 30px;
+    padding: 0 20px;
 `
 
 const MapBarImg = styled.img`
     width: 12px;
     height: 20px;
+    padding: 0 20px;
 `
 
 const MapPosts = styled.div`
