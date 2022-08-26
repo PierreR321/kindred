@@ -21,7 +21,7 @@ const Header = () => {
           <div className='headtext'>TEAM</div>
           <i className="discord fa-brands fa-discord"></i>
           <i class="twitter fa-brands fa-twitter"></i>
-          <img className='kind' src='/img/1k-logo.webp' alt='' />
+          <img className='kind' src='/img/middle.png' alt='' />
           <WalletButton onClick={() => {}}>CONNECT WALLET</WalletButton>
         </div>
 
