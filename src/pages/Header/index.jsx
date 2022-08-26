@@ -17,6 +17,7 @@ const Header = () => {
           <MenuItem>MINT</MenuItem>
           <MenuItem>TASTEMAKER</MenuItem>
           <MenuItem>VISION MAP</MenuItem>
+          <MenuItem>FAQ</MenuItem>
           <MenuItem>TEAM</MenuItem>
           <i className="discord fa-brands fa-discord" style={{
             display: "flex",
@@ -28,7 +29,7 @@ const Header = () => {
             color: "rgb(149, 103, 103)",
             cursor: "pointer"
           }} />
-          <i class="twitter fa-brands fa-twitter" style={{
+          <i className="twitter fa-brands fa-twitter" style={{
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
@@ -47,7 +48,8 @@ const Header = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              padding: "0 16px"
+              padding: "0 16px",
+              cursor: "pointer"
             }} />
           <WalletButton onClick={() => { }}>CONNECT WALLET</WalletButton>
         </MenuList>
@@ -65,7 +67,7 @@ const Container = styled.div`
 `
 
 const MainHeader = styled.div`
-  position:fixed;
+  position: fixed;
   top: 0;
   width: 100%;
   display: flex;
@@ -114,6 +116,7 @@ const MenuItem = styled.div`
   padding: 2px 16px 0;
   font-size: 16px;
   font-family: 'Rubik Arial san-serif';
+  cursor: pointer;
 `
 
 const WalletButton = styled.div`
