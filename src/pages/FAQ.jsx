@@ -54,11 +54,11 @@ const FAQ = () => {
 }
 
 const Container = styled.div`
-    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #f9e4d1;
+    background: #fad9b7;
+    padding: 40px;
 `
 
 export default FAQ;

@@ -1,9 +1,9 @@
 import styled from "styled-components";
+import { mobile, desktop } from "../utils";
 
 const VisionMap = () => {
     return (
         <Container>
-
             <MapBar>
                 <Bar>
                     <MapBarTitle>KINDRED SPIRITS VISION MAP</MapBarTitle>
@@ -45,7 +45,6 @@ const VisionMap = () => {
                 </Bar>
             </MapBar>
             <Maps>
-
                 <MapPosts>
                     <MapPost>
                         <MapTitle style={{ background: "#ec5b8f" }}>
@@ -115,22 +114,26 @@ const VisionMap = () => {
 
             <Posts>
                 <PostsTitle>GENSIS PASS UTILITY</PostsTitle>
-                <Post>
-                    <PostTitle>COMMUNITY</PostTitle>
-                    <PostText>Access to a dedicated Discord community of top-tier artists and private community activations</PostText>
-                </Post>
-                <Post>
-                    <PostTitle>VOTING</PostTitle>
-                    <PostText>Genesis Pass holders will drive future generations of Kindred Spirits collections</PostText>
-                </Post>
-                <Post>
-                    <PostTitle>TASTEMAKERS</PostTitle>
-                    <PostText>Stealth benefits curated by Genesis Tastemakers</PostText>
-                </Post>
-                <Post>
-                    <PostTitle>FUTURE DROPS</PostTitle>
-                    <PostText>Discount on Gen1 Mint. Guaranteed priority access to all future drops, merch, irl events and more</PostText>
-                </Post>
+                <Part>
+                    <Post>
+                        <PostTitle>COMMUNITY</PostTitle>
+                        <PostText>Access to a dedicated Discord community of top-tier artists and private community activations</PostText>
+                    </Post>
+                    <Post>
+                        <PostTitle>VOTING</PostTitle>
+                        <PostText>Genesis Pass holders will drive future generations of Kindred Spirits collections</PostText>
+                    </Post>
+                </Part>
+                <Part>
+                    <Post>
+                        <PostTitle>TASTEMAKERS</PostTitle>
+                        <PostText>Stealth benefits curated by Genesis Tastemakers</PostText>
+                    </Post>
+                    <Post>
+                        <PostTitle>FUTURE DROPS</PostTitle>
+                        <PostText>Discount on Gen1 Mint. Guaranteed priority access to all future drops, merch, irl events and more</PostText>
+                    </Post>
+                </Part>
             </Posts>
         </Container>
     )
@@ -142,16 +145,17 @@ const Container = styled.div`
 `
 
 const Maps = styled.div`
-    height: 524px;
-    background: #f7dec5b3;
+    height: auto;
+    background: #fad9b7;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    padding: 20px;
 `
 
 const MapBar = styled.div`
-    background: #f7dec5b3;
+    background: #fad9b7;
     height: 36px;
     display: flex;
     align-items: center;
@@ -195,6 +199,7 @@ const Bar = styled.div`
     animation-delay: 0s;  
 `
 const MapBarTitle = styled.span`
+    color: #956767;
     font-size: 30px;
     padding: 0 20px;
 `
@@ -203,15 +208,21 @@ const MapBarImg = styled.img`
     width: 12px;
     height: 20px;
     padding: 0 20px;
+
 `
 
 const MapPosts = styled.div`
     display: flex;
+    ${mobile} {
+        flex-direction: column;
+        align-items: center;
+    }
 `
 
 const MapPost = styled.div`
-    width: 340px;
+    
     display: flex;
+    margin: 20px;
     flex-direction: column;
     align-items: center;
     padding: 0 8px;
@@ -222,34 +233,59 @@ const MapTitle = styled.div`
     color: white;
     font-size: 30px;
     border-radius: 5px;
+    ${desktop} {
+        padding: 4px 12px;
+        font-size: 15px;
+    }
 `
 
 const MapDescription = styled.span`
+    color: #956767;
     font-size: 16px;
     padding: 16px 0 24px;
+    ${desktop}{
+        padding: 8px 0 12px;
+        font-size: 8px;
+    }
 `
 
 const MapImg = styled.img`
     width: 180px;
     height: 180px;
     border-radius: 20px;
+    ${desktop} {
+        width: 90px;
+        height: 90px;
+    }
 `
 
 const MapText = styled.span`
+    color: #956767;
     font-size: 14px;
     padding: 8px 0 0;
 `
 
 const Posts = styled.div`
     text-align: center;
+    background-color: #fdf2df;
 `
 
 const PostsTitle = styled.h1`
+    margin: 0;
+    padding: 80px 0 20px 0;
     color: #956767;
     font-size: 60px;
 `
-
+const Part = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    ${mobile}{
+        flex-direction: column;
+    }
+`
 const Post = styled.div`
+    margin: 0 35px 35px 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -262,7 +298,7 @@ const PostTitle = styled.h2`
 
 const PostText = styled.p`
     width: 350px;
-    font-size: 24px;
+    font-size: 20px;
 `
 
 export default VisionMap;

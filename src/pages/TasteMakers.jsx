@@ -85,8 +85,8 @@ const TasteMakers = () => {
             <Title>
                 <STitle><SubTitle>1111</SubTitle>KINDRED SPIRITS</STitle>
                 <LTitle>GENESIS PASSES</LTitle>
+                {TasteMake()}
             </Title>
-            {TasteMake()}
         </Container>
     )
 }
@@ -95,7 +95,8 @@ const Container = styled.div`
 `
 
 const Title = styled.div`
-    margin: 24px 0 12px;
+    background-color: #fdf2df;
+    padding: 24px 0 12px;
     color: #956767;
     display: flex;
     flex-direction: column;
@@ -125,7 +126,7 @@ const Content = styled.div`
         flex-direction: column;
         align-items: center;
     }
-    padding: 16px 80px;
+    margin: 16px 40px;
 `
 
 const Description = styled.div`
