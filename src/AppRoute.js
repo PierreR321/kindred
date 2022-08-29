@@ -1,28 +1,36 @@
 import { useRoutes } from 'react-router-dom';
-import Homepage from "./pages/homepage/Homepage";
-import News from "./pages/news/News";
-import Text from "./pages/text/Text";
 
+import { Mint, TasteMakers, VisionMap, FAQ, Team } from "./pages"
 
 const routes = [
   {
     path: "/",
-    element: <Homepage />,
+    element: <Mint />,
     children: [],
   },
   {
-    path: "/Blog",
-    element: <Homepage />,
+    path: "/#hero",
+    element: <Mint />,
     children: [],
   },
   {
-    path: "/News",
-    element: <News />,
+    path: "/#about",
+    element: <TasteMakers />,
     children: [],
   },
   {
-    path: "/News/:id",
-    element: <Text />,
+    path: "/#vision-map",
+    element: <VisionMap />,
+    children: [],
+  },
+  {
+    path: "/#faq",
+    element: <FAQ />,
+    children: [],
+  },
+  {
+    path: "/#team",
+    element: <Team />,
     children: [],
   },
 
