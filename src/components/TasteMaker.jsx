@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-import { mobile } from "../utils";
+import { desktop, mobile } from "../utils";
 
 const TasteMaker = (props) => {
     return (
@@ -35,6 +35,10 @@ const Container = styled.div`
 const TMImg = styled.img`
     width: 234px;
     height: 234px;
+    ${desktop}{
+        width: 180px;
+        height: 180px;
+    }
     ${mobile} {
         width: 324px;
         height: 324px;

@@ -24,7 +24,6 @@ const App = () => {
 
 const Container = styled.div`
     width: 100%;
-    background: #FFF3ED;
     text-align: center;
     display: flex;
     flex-direction: column;

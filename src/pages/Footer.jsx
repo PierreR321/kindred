@@ -9,7 +9,26 @@ const Footer = () => {
                 Skizzy Mars, “Numb.” Pace. 2014.
             </FooterText>
             <FooterSocial>
-
+            <i className="discord fa-brands fa-discord" style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "32px",
+            height: "20px",
+            padding: "0 16px",
+            color: "rgb(149, 103, 103)",
+            cursor: "pointer"
+          }} />
+          <i className="twitter fa-brands fa-twitter" style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            width: "20px",
+            height: "20px",
+            padding: "0 16px",
+            color: "rgb(149, 103, 103)",
+            cursor: "pointer"
+          }} />
             </FooterSocial>
             <FooterInfo>
                 A project by 1KinLabs
@@ -20,6 +39,7 @@ const Footer = () => {
             <FooterInfo>
                 Terms and Conditions
             </FooterInfo>
+            <LogoBar>
             <FooterLogoBar>
                 <LogoImg src="img/1k-logo-long.webp"/>
                 <LogoImg src="img/1k-logo.webp"/>
@@ -38,18 +58,72 @@ const Footer = () => {
                 <LogoImg src="img/1k-logo-long.webp"/>
                 <LogoImg src="img/1k-logo.webp"/>
                 <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
+                <LogoImg src="img/1k-logo.webp"/>
+                <LogoImg src="img/1k-logo-long.webp"/>
             </FooterLogoBar>
+            </LogoBar>
+            
         </Container>
     )
 }
 
 const Container = styled.div`
     width: 100%;
-    background: #f7dec5b3;
+    background: #fad9b7;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 64px 0;
+    padding: 64px 0px 0px 0px;
+    z-index: 99;
 `
 
 const FooterText = styled.span`
@@ -57,10 +131,11 @@ const FooterText = styled.span`
     color: #271F18;
     text-align: center;
     margin: 0 0 24px;
+    padding: 0 20px 0 20px;
 `
 
 const FooterSocial = styled.div`
-
+    display: flex;
 `
 
 const FooterInfo = styled.span`
@@ -68,9 +143,31 @@ const FooterInfo = styled.span`
     color: #271F18;
     padding: 6px 0;
 `
-
+const LogoBar = styled.div`
+width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    white-space: nowrap;
+    z-index: 99;
+    overflow: hidden;
+`
 const FooterLogoBar = styled.div`
     display: inline;
+    margin: 20px 0 0 0;
+    white-space: nowrap;
+    overflow: hidden;
+    @keyframes animate {
+        0%{
+            transform: translate(-0%,0%);
+        }
+        100%{
+            transform: translate(-25%,0%);
+        }
+    }
+    animation: animate 10s linear  infinite;
+    animation-play-state: running;
+    animation-delay: 0s;
 `
 
 const LogoImg = styled.img`
