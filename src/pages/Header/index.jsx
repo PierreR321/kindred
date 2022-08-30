@@ -3,6 +3,7 @@ import { useState } from 'react';
 
 import DropDown from './DropDown'
 import { desktop, mobile } from "../../utils"
+import { applyMiddleware } from 'redux';
 
 const Header = () => {
   const [show, setShow] = useState(false);
@@ -17,48 +18,57 @@ const Header = () => {
           <LogoImg src='/img/logo.webp' alt='' />
         </HeaderLogo>
         <MenuList>
-          <MenuItem href='#banner' onClick={closeMenu}>MINT</MenuItem>
+        <MenuItem href='#banner' onClick={closeMenu}>MINT</MenuItem>
           <MenuItem href='#taste' onClick={closeMenu}>TASTEMAKER</MenuItem>
           <MenuItem href='#vision' onClick={closeMenu}>VISION MAP</MenuItem>
           <MenuItem href='#faq' onClick={closeMenu}>FAQ</MenuItem>
           <MenuItem href='#team' onClick={closeMenu}>TEAM</MenuItem>
-          <i className="discord fa-brands fa-discord" style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: "32px",
-            height: "20px",
-            padding: "0 16px",
-            color: "rgb(149, 103, 103)",
-            cursor: "pointer"
-          }} />
-          <i className="twitter fa-brands fa-twitter" style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: "20px",
-            height: "20px",
-            padding: "0 16px",
-            color: "rgb(149, 103, 103)",
-            cursor: "pointer"
-          }} />
-          <img
-            src='/img/middle.png'
+          <a className="discord fa-brands fa-discord"
+            href="https://discord.gg/kindrednft"
+            target={"_blank"}
+            style={{
+              textDecoration: "none",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "32px",
+              height: "20px",
+              padding: "0 16px",
+              color: "rgb(149, 103, 103)",
+              cursor: "pointer"
+            }} />
+          <a className="twitter fa-brands fa-twitter"
+            href="https://twitter.com/kindrednft?s=21"
+            target={"_blank"}
+            style={{
+              textDecoration: "none",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "20px",
+              height: "20px",
+              padding: "0 16px",
+              color: "rgb(149, 103, 103)",
+              cursor: "pointer"
+            }} />
+          <a
+            href="https://medium.com/@KindredNFT"
+            target={"_blank"}
             alt=''
             style={{
-              width: "24px",
-              height: "18px",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               padding: "0 16px",
               cursor: "pointer"
-            }} />
+            }} >
+            <img src="img/middle.png" width={"24px"} height={"18px"} />
+          </a>
           <WalletButton onClick={() => { }}>CONNECT WALLET</WalletButton>
         </MenuList>
         <DropDownButton onClick={() => setShow(!show)} isShown={show} />
       </MainHeader>
-      <div style={{ display: show ? "inherit" : "none"}}><DropDown /></div>
+      <div style={{ display: show ? "inherit" : "none" }}><DropDown /></div>
 
     </Container>
   )

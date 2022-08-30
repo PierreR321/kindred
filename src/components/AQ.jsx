@@ -9,8 +9,8 @@ const AQ = (props) => {
         <Container onClick={() => setIsCollapsed(!isCollapsed)}>
             <Question>
                 <QuestionText>{props.question}</QuestionText>
-                <PlusIcon className=" fa-solid fa-plus" isCollapsed={isCollapsed}/>
-                <MinusIcon className=" fa-solid fa-minus" isCollapsed={isCollapsed}/>
+                <CollapseIcon className=" fa-solid fa-plus" isCollapsed={isCollapsed}/>
+                <CollapseIcon className=" fa-solid fa-minus" isCollapsed={!isCollapsed}/>
             </Question>
             <Answer isCollapsed={isCollapsed}>{props.answer}</Answer>
         </Container>
@@ -30,12 +30,14 @@ const Container = styled.div`
     margin: 0 0 8px;
     padding: 12px 12px;
     border-radius: 0.5rem;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);
 `
 
 const Question = styled.div`
     width: 100%;
     cursor: pointer;
     display: flex;
+    align-items: center;
 `
 
 const QuestionText = styled.span`
@@ -55,21 +57,11 @@ const Answer = styled.div`
     display: ${(props) => props.isCollapsed ? "none" : "initial"};
 `
 
-const MinusIcon = styled.i`
+const CollapseIcon = styled.i`
     margin: 0 10px;
-    width: 24px;
-    height: 24px;
-    flex: 1;
-    color:  rgb(149, 103, 103);
-    display: ${(props) => props.isCollapsed ? 'none' : "initial"};
-`
-const PlusIcon = styled.i`
-    margin: 0 10px;
-    width: 24px;
-    height: 24px;
     flex: 1;
     color:  rgb(149, 103, 103);
     display: ${(props) => props.isCollapsed ? 'initial' : "none"};
-
 `
+
 export default AQ;
