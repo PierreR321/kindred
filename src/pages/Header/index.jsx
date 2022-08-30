@@ -6,7 +6,10 @@ import { desktop, mobile } from "../../utils"
 
 const Header = () => {
   const [show, setShow] = useState(false);
+  const [click, setClick] = useState(false)
+  const handleClick = () => setClick(!click)
 
+  const closeMenu = () => setClick(false)
   return (
     <Container>
       <MainHeader>
@@ -14,11 +17,11 @@ const Header = () => {
           <LogoImg src='/img/logo.webp' alt='' />
         </HeaderLogo>
         <MenuList>
-          <MenuItem>MINT</MenuItem>
-          <MenuItem>TASTEMAKER</MenuItem>
-          <MenuItem>VISION MAP</MenuItem>
-          <MenuItem>FAQ</MenuItem>
-          <MenuItem>TEAM</MenuItem>
+          <MenuItem href='#banner' onClick={closeMenu}>MINT</MenuItem>
+          <MenuItem href='#taste' onClick={closeMenu}>TASTEMAKER</MenuItem>
+          <MenuItem href='#vision' onClick={closeMenu}>VISION MAP</MenuItem>
+          <MenuItem href='#faq' onClick={closeMenu}>FAQ</MenuItem>
+          <MenuItem href='#team' onClick={closeMenu}>TEAM</MenuItem>
           <i className="discord fa-brands fa-discord" style={{
             display: "flex",
             alignItems: "center",
@@ -110,7 +113,8 @@ const MenuList = styled.div`
   }
 `
 
-const MenuItem = styled.div`
+const MenuItem = styled.a`
+  text-decoration: none;
   font-weight: 700;
   color: rgb(149, 103, 103);
   padding: 2px 16px 0;

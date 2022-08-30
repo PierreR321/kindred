@@ -42,7 +42,7 @@ const AQList = [
 
 const FAQ = () => {
     return (
-        <Container>
+        <Container id="faq">
             <h1 style={{ fontSize: "60px", color: "#956767" }}>
                 FAQ
             </h1>

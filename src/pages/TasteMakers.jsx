@@ -1,16 +1,23 @@
 import styled from "styled-components";
 import { useState } from "react";
+import { motion,AnimatePresence } from 'framer-motion'
+
 
 import { desktop, mobile } from "../utils";
 import TasteMaker from "../components/TasteMaker";
 
 const TasteMakers = () => {
     const [index, setIndex] = useState(0);
-
+    const animations = {
+  initial: { opacity: 0, x: 100 },
+  animate: { opacity: 1, x: 0 },
+  exit: { opacity: 0, x: -100 },
+};
     const TasteMake = () => {
         switch (index) {
             case 0:
                 return (
+                    
                     <Content>
                         <Description>
                             <DescriptionTitle>OUR 1ST TASTEMAKERS</DescriptionTitle>
@@ -36,9 +43,11 @@ const TasteMakers = () => {
                             onMouseLeave={() => setIndex(0)}
                         />
                     </Content>
+
                 )
             case 1:
                 return (
+
                     <Content
                         onMouseOver={() => setIndex(1)}
                         onMouseLeave={() => setIndex(0)}>
@@ -56,9 +65,11 @@ const TasteMakers = () => {
                             type="LEAD TASTEMAKER"
                         />
                     </Content>
+
                 )
             default:
                 return (
+                    <AnimatePresence exitBeforeEnter>
                     <Content
                         onMouseOver={() => setIndex(2)}
                         onMouseLeave={() => setIndex(0)}>
@@ -76,75 +87,86 @@ const TasteMakers = () => {
                             type="TASTEMAKER"
                         />
                     </Content>
+                    </AnimatePresence>
+
                 )
         }
     }
 
     return (
-        <Container>
+
+        <Container id="taste">
             <Title>
                 <STitle><SubTitle>1111</SubTitle>KINDRED SPIRITS</STitle>
                 <LTitle>GENESIS PASSES</LTitle>
-                {TasteMake()}
+
+                    {TasteMake()}
+
             </Title>
         </Container>
+
+
+
     )
 }
 
 const Container = styled.div`
-`
+
+            `
 
 const Title = styled.div`
-    background-color: #fdf2df;
-    padding: 24px 0 12px;
-    color: #956767;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 900;
-`
+            background-color: #fdf2df;
+            padding: 24px 0 12px;
+            color: #956767;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-weight: 900;
+            `
 
 const STitle = styled.h2`
-    font-size: 44.8px;
-    margin: 0;
-    display: flex;
-`
+            font-size: 44.8px;
+            margin: 0;
+            display: flex;
+            `
 
 const SubTitle = styled.section`
-    color: #EC5B8F;
-`
+            color: #EC5B8F;
+            `
 
 const LTitle = styled.h1`
-    font-size: 72px;
-    padding: 0;
-    margin: 0;
-`
+            font-size: 72px;
+            padding: 0;
+            margin: 0;
+            `
 
 const Content = styled.div`
-    display: flex;
-    ${mobile} {
-        flex-direction: column;
-        align-items: center;
-    }
-    margin: 16px 40px;
-`
+            width: 60%;
+            display: flex;
+            ${desktop} {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            margin: 16px 40px;
+            `
 
 const Description = styled.div`
-    background: #f7dec5b3;
-    padding: 24px 32px;
-    border-radius: 3rem;
-    color: #956767;
-    line-height: 2rem;
-`
+            background: #f7dec5b3;
+            padding: 24px 32px;
+            border-radius: 3rem;
+            color: #956767;
+            line-height: 2rem;
+            `
 
 const DescriptionTitle = styled.h3`
-    font-size: 24px;
-    margin: 0 0 8px;
-`
+            font-size: 24px;
+            margin: 0 0 8px;
+            `
 
 const DescriptionText = styled.p`
-    font-size: 18px;
-    margin: 0 0 8px;
-`
+            font-size: 18px;
+            margin: 0 0 8px;
+            `
 
 export default TasteMakers;

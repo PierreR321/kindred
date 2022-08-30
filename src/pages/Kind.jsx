@@ -1,40 +1,38 @@
 import styled from 'styled-components'
-import Kind from './Kind'
+import React from 'react'
+import Header from './Header'
 
-import {desktop, mobile} from "../utils"
-
-const Banner = () => {
+const Kind = () => {
     return (
-        <Container id='banner'>
+        <Container >
+            <Header />
             <BannerVideo autoPlay loop muted preload="none">
-                <source src="/video/banner.mp4" type="video/mp4"></source>
+                <source src="/video/spirit.mp4" type="video/mp4"></source>
             </BannerVideo>
-            <SpiritBox href={Kind}>
-                <SpiritBoxText>SPIRIT BOX</SpiritBoxText>
+            <SpiritBox>
+                <SpiritBoxText>CLAIM</SpiritBoxText>
             </SpiritBox>
         </Container >
     )
 }
-
 const Container = styled.div`
     display: flex;
+    background: #000000;
     justify-content: center;
+    flex-direction: column;
     width: 100%;
 `
 
 const BannerVideo = styled.video`
     width: 100%;
-    height: 640px;
+
     object-fit: cover;
     padding-top: 84px;
-    ${desktop} {
-        padding-top: 60px;
-    }
 `
 
-const SpiritBox = styled.a`
-    position: absolute;
-    top: 380px;
+const SpiritBox = styled.div`
+    position: fixed;
+    bottom: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -63,5 +61,4 @@ const SpiritBoxText = styled.div`
         transition: 0.5s;
     }
 `
-
-export default Banner;
+export default Kind

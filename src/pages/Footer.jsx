@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 const Footer = () => {
     return (
-        <Container>
+        <Container id="footer">
             <FooterText>
                 "Maybe if we loved ourselves… it wouldn't be so hard to love each other."
                 <br />
@@ -123,14 +123,13 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     padding: 64px 0px 0px 0px;
-    z-index: 99;
 `
 
 const FooterText = styled.span`
     font-size: 24px;
     color: #271F18;
     text-align: center;
-    margin: 0 0 24px;
+    margin: 0 0 20px;
     padding: 0 20px 0 20px;
 `
 
@@ -144,7 +143,8 @@ const FooterInfo = styled.span`
     padding: 6px 0;
 `
 const LogoBar = styled.div`
-width: 100%;
+    margin: 20px 0 0 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,7 +154,6 @@ width: 100%;
 `
 const FooterLogoBar = styled.div`
     display: inline;
-    margin: 20px 0 0 0;
     white-space: nowrap;
     overflow: hidden;
     @keyframes animate {

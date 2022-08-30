@@ -3,7 +3,7 @@ import { mobile, desktop } from "../utils";
 
 const VisionMap = () => {
     return (
-        <Container>
+        <Container id="vision">
             <MapBar>
                 <Bar>
                     <MapBarTitle>KINDRED SPIRITS VISION MAP</MapBarTitle>

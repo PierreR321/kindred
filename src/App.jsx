@@ -8,8 +8,10 @@ import FAQ from "./pages/FAQ";
 import Team from './pages/Team'
 import Footer from './pages/Footer';
 
+
 const App = () => {
     return (
+        <div>
         <Container>
             <Header />
             <Banner />
@@ -17,8 +19,9 @@ const App = () => {
             <VisionMap />
             <FAQ />
             <Team />
-            <Footer />
+            <Footer /> 
         </Container>
+        </div>
     )
 }
 

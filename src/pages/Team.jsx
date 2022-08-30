@@ -3,7 +3,7 @@ import { desktop, mobile } from "../utils"
 
 const Team = () => {
     return (
-        <Container>
+        <Container id="team">
             <Title>
                 MEET THE TEAM
             </Title>
