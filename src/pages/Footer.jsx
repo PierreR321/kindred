@@ -9,26 +9,47 @@ const Footer = () => {
                 Skizzy Mars, “Numb.” Pace. 2014.
             </FooterText>
             <FooterSocial>
-            <i className="discord fa-brands fa-discord" style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: "32px",
-            height: "20px",
-            padding: "0 16px",
-            color: "rgb(149, 103, 103)",
-            cursor: "pointer"
-          }} />
-          <i className="twitter fa-brands fa-twitter" style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            width: "20px",
-            height: "20px",
-            padding: "0 16px",
-            color: "rgb(149, 103, 103)",
-            cursor: "pointer"
-          }} />
+                <a className="discord fa-brands fa-discord"
+                    href="https://discord.gg/kindrednft"
+                    target={"_blank"}
+                    style={{
+                        textDecoration: "none",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        width: "32px",
+                        height: "20px",
+                        padding: "0 16px",
+                        color: "rgb(149, 103, 103)",
+                        cursor: "pointer"
+                    }} />
+                <a className="twitter fa-brands fa-twitter"
+                    href="https://twitter.com/kindrednft?s=21"
+                    target={"_blank"}
+                    style={{
+                        textDecoration: "none",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        width: "20px",
+                        height: "20px",
+                        padding: "0 16px",
+                        color: "rgb(149, 103, 103)",
+                        cursor: "pointer"
+                    }} />
+                <a
+                    href="https://medium.com/@KindredNFT"
+                    target={"_blank"}
+                    alt=''
+                    style={{
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        padding: "0 16px",
+                        cursor: "pointer"
+                    }} >
+                    <img src="img/middle.png" width={"24px"} height={"18px"} />
+                </a>
             </FooterSocial>
             <FooterInfo>
                 A project by 1KinLabs
@@ -36,82 +57,81 @@ const Footer = () => {
             <FooterInfo>
                 All rights reserved
             </FooterInfo>
-            <FooterInfo>
+            <FooterInfo style={{ marginBottom: "80px" }}>
                 Terms and Conditions
             </FooterInfo>
-            <LogoBar>
-            <FooterLogoBar>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-                <LogoImg src="img/1k-logo.webp"/>
-                <LogoImg src="img/1k-logo-long.webp"/>
-            </FooterLogoBar>
+            <LogoBar href="https://1kin.io/" target={"_blank"}>
+                <FooterLogoBar>
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                    <LogoImg src="img/1k-logo.webp" />
+                    <LogoImg src="img/1k-logo-long.webp" />
+                </FooterLogoBar>
             </LogoBar>
-            
         </Container>
     )
 }
@@ -143,18 +163,21 @@ const FooterInfo = styled.span`
     color: #271F18;
     padding: 6px 0;
 `
-const LogoBar = styled.div`
-width: 100%;
+
+const LogoBar = styled.a`
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     white-space: nowrap;
     z-index: 99;
     overflow: hidden;
+    cursor: pointer;
 `
+
 const FooterLogoBar = styled.div`
     display: inline;
-    margin: 20px 0 0 0;
+    margin: 0 0 -4px;
     white-space: nowrap;
     overflow: hidden;
     @keyframes animate {
